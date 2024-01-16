@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
@@ -14,7 +18,7 @@
   </head>
   <body class="d-flex flex-column h-100">
     <!--Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fs-3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fs-4">
       <div class="container">
         <a class="navbar-brand fs-3 text-uppercase fw-medium" href="#"
           >Start Bootstrap</a
@@ -33,7 +37,9 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
@@ -45,11 +51,12 @@
         </div>
       </div>
     </nav>
+
     <!--Header-->
-    <header class="py-5 bg-dark">
-      <div class="container text-white">
+    <header class="py-5 bg-dark text-white" id="header">
+      <div class="container">
         <div class="row justify-content-center align-items-center gx-5 my-5">
-          <div class="col">
+          <div class="col-lg-8 col-xl-7 col-xxl-6">
             <div class="my-5 text-center text-xl-start">
               <h1 class="display-4 fw-bolder mb-2">
                 A Bootstrap 5 template for modern businesses
@@ -60,19 +67,258 @@
                 toolkit!
               </p>
               <div
-                class="d-sm-flex justify-content-sm-center justify-content-xl-start gap-4"
+                class="d-sm-flex justify-content-sm-start justify-content-xl-start gap-3"
               >
-                <button class="btn btn-primary btn-lg">Get Started</button>
-                <button class="btn btn-outline-light btn-lg">Learn More</button>
+                <a class="btn btn-primary btn-lg me-3" href="#feature"
+                  >Get Started</a
+                >
+                <a class="btn btn-outline-light btn-lg" href="#">Learn More</a>
               </div>
             </div>
           </div>
-          <div class="col text-center">
-            <img class="img1" src="java örnek.png" alt="" />
+          <div class="col-lg-4 col-xl-5 col-xxl-6 text-center">
+            <img
+              class="img1 rounded-3 ms-5"
+              src="https://dummyimage.com/600x400/343a40/6c757d"
+              alt=""
+            />
           </div>
         </div>
       </div>
     </header>
+
+    <!--Features section-->
+    <section class="my-5 py-5" id="feature">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h2 class="fw-bold gy-5">A better way to start building.</h2>
+          </div>
+          <div class="col-lg-8">
+            <div class="row row-cols-1 row-cols-md-2 gx-5">
+              <div class="col mb-5 h-100">
+                <div
+                  class="feature bg-primary bg-gradient text-white mb-3 rounded-3"
+                >
+                  <i class="bi bi-collection"></i>
+                </div>
+
+                <h4>Featured title</h4>
+                <p>
+                  Paragraph of text beneath the heading to explain the heading.
+                  Here is just a bit more text.
+                </p>
+              </div>
+              <div class="col mb-5 h-100">
+                <div
+                  class="feature bg-primary bg-gradient text-white mb-3 rounded-3"
+                >
+                  <i class="bi bi-building"></i>
+                </div>
+
+                <h4>Featured title</h4>
+                <p>
+                  Paragraph of text beneath the heading to explain the heading.
+                  Here is just a bit more text.
+                </p>
+              </div>
+              <div class="col mb-5 h-100">
+                <div
+                  class="feature bg-primary bg-gradient text-white mb-3 rounded-3"
+                >
+                  <i class="bi bi-toggles2"></i>
+                </div>
+
+                <h4>Featured title</h4>
+                <p>
+                  Paragraph of text beneath the heading to explain the heading.
+                  Here is just a bit more text.
+                </p>
+              </div>
+              <div class="col mb-5 h-100">
+                <div
+                  class="feature bg-primary bg-gradient text-white mb-3 rounded-3"
+                >
+                  <i class="bi bi-toggles2"></i>
+                </div>
+
+                <h4>Featured title</h4>
+                <p>
+                  Paragraph of text beneath the heading to explain the heading.
+                  Here is just a bit more text.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Reference section-->
+    <section class="py-5 bg-light">
+      <div class="container px-5 my-5">
+        <div class="row gx-5 justify-content-center">
+          <div class="col-lg-10 col-xl-7">
+            <div class="text-center fst-italic fs-4">
+              <p>
+                "Working with Start Bootstrap templates has saved me tons of
+                development time when building new projects! Starting with a
+                Bootstrap template just makes things easier!"
+              </p>
+            </div>
+            <div class="d-flex align-items-center justify-content-center mt-4">
+              <img
+                class="img2 rounded-circle"
+                src="https://dummyimage.com/40x40/ced4da/6c757d"
+              />
+              <div class="ms-3 fw-bold">
+                Tom Ato <span class="text-primary">/</span> CEO, Pomodoro
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Blog section-->
+    <section class="py-5">
+      <div class="container px-5 my-5">
+        <div class="row gx-5 justify-content-center">
+          <div class="col-lg-8 col-xl-6">
+            <div class="text-center">
+              <h2 class="fw-bold">From our blog</h2>
+              <p class="lead fs-5 fw-normal text-muted mb-5">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
+                fugit ratione dicta mollitia. Officiis ad.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row gx-5">
+          <div class="col-lg-4 mb-5">
+            <div class="card h-100 border-0 shadow">
+              <img
+                src="https://dummyimage.com/600x350/ced4da/6c757d"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body p-4">
+                <div class="badge bg-primary mb-2 fw-bolder rounded-5">
+                  News
+                </div>
+                <a class="text-decoration-none text-dark stretched-link" href=""
+                  ><h5 class="card-title mb-0">Blog post title</h5></a
+                >
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="card-footer bg-transparent border-top-0 pt-0">
+                  <div class="d-flex align-items-end justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="img2 rounded-circle me-3"
+                        src="https://dummyimage.com/40x40/ced4da/6c757d"
+                      />
+                      <div class="small">
+                        <div class="fw-bold">Kelly Rowan</div>
+                        <div class="text-muted">
+                          March 12, 2023 &middot; 6 min read
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-5">
+            <div class="card h-100 border-0 shadow">
+              <img
+                src="https://dummyimage.com/600x350/adb5bd/495057"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body p-4">
+                <div class="badge bg-primary mb-2 fw-bolder rounded-5">
+                  Media
+                </div>
+                <a class="text-decoration-none text-dark stretched-link" href=""
+                  ><h5 class="card-title mb-3">Another blog post title</h5></a
+                >
+                <p class="card-text">
+                  This text is a bit longer to illustrate the adaptive height of
+                  each card. Some quick example text to build on the card title
+                  and make up the bulk of the card's content.
+                </p>
+                <div class="card-footer bg-transparent border-top-0 p-0">
+                  <div class="d-flex align-items-end justify-content-between">
+                    <div class="mt-4 d-flex align-items-center">
+                      <img
+                        class="img2 rounded-circle me-3"
+                        src="https://dummyimage.com/40x40/ced4da/6c757d"
+                      />
+                      <div class="small">
+                        <div class="fw-bold">Josiah Barclay</div>
+                        <div class="text-muted">
+                          March 23, 2023 &middot; 4 min read
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-5">
+            <div class="card h-100 border-0 shadow">
+              <img
+                src="https://dummyimage.com/600x350/6c757d/343a40"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body p-4">
+                <div class="badge bg-primary mb-2 fw-bolder rounded-5">
+                  News
+                </div>
+                <a class="text-decoration-none text-dark stretched-link" href=""
+                  ><h5 class="card-title mb-3">
+                    The last blog post title is a little bit longer than the
+                    others
+                  </h5></a
+                >
+                <p class="card-text">
+                  Some more quick example text to build on the card title and
+                  make up the bulk of the card's content.
+                </p>
+                <div class="card-footer bg-transparent border-top-0 p-0">
+                  <div class="d-flex align-items-end justify-content-between">
+                    <div class="mt-4 d-flex align-items-center">
+                      <img
+                        class="img2 rounded-circle me-3"
+                        src="https://dummyimage.com/40x40/ced4da/6c757d"
+                      />
+                      <div class="small">
+                        <div class="fw-bold">Evelyn Martinez</div>
+                        <div class="text-muted">
+                          April 2, 2023 &middot; 10 min read
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
